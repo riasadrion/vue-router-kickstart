@@ -1924,6 +1924,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -19884,7 +19885,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("About")])])
+    return _c("div", { staticClass: "container" }, [
+      _c("h1", [_vm._v("About")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+        )
+      ])
+    ])
   }
 ]
 render._withStripped = true
@@ -35139,6 +35148,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+  mode: 'history',
   routes: _routes__WEBPACK_IMPORTED_MODULE_1__["default"]
 });
 
